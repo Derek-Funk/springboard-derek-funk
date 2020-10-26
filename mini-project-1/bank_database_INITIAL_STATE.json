@@ -1,0 +1,96 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "type": "Checking Account"
+    },
+    {
+      "id": 2,
+      "type": "Savings Account"
+    },
+    {
+      "id": 3,
+      "type": "Credit Account"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "first_name": "Ida",
+      "last_name": "Cooke",
+      "join_date": "2017-05-23"
+    },
+    {
+      "id": 2,
+      "first_name": "Aleisha",
+      "last_name": "Leach",
+      "join_date": "2018-02-14"
+    },
+    {
+      "id": 3,
+      "first_name": "Nasir",
+      "last_name": "Wills",
+      "join_date": "2019-12-05"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "first_name": "Luciano",
+      "last_name": "Shepard",
+      "address": "123 Peacock Lane, Nashville, TN 37011",
+      "join_date": "2017-08-15"
+    },
+    {
+      "id": 2,
+      "first_name": "Izzie",
+      "last_name": "Conner",
+      "address": "456 Hickory Road, Portland, ME 04019",
+      "join_date": "2017-11-07"
+    },
+    {
+      "id": 3,
+      "first_name": "Marley",
+      "last_name": "McCoy",
+      "address": "789 Treebark Street, Birmingham, AL 35005",
+      "join_date": "2018-10-29"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "type_id": 1,
+      "customer_id": 1,
+      "open_date": "2017-08-15",
+      "balance": 1000
+    },
+    {
+      "id": 2,
+      "type_id": 1,
+      "customer_id": 2,
+      "open_date": "2017-11-07",
+      "balance": 10000
+    },
+    {
+      "id": 3,
+      "type_id": 2,
+      "customer_id": 2,
+      "open_date": "2018-03-27",
+      "balance": 3000
+    },
+    {
+      "id": 4,
+      "type_id": 1,
+      "customer_id": 3,
+      "open_date": "2018-10-29",
+      "balance": 5000
+    },
+    {
+      "id": 5,
+      "type_id": 3,
+      "customer_id": 3,
+      "open_date": "2019-09-10",
+      "balance": 500
+    }
+  ]
+}
