@@ -72,7 +72,7 @@ def format_popular_tickets(tickets_list):
         print('-', ticket[0])
     return
 
-# connection = get_db_connection(username='root', password=<YOUR_MYSQL_PASSWORD>', host='localhost', port=3306, database=<YOUR_EXISTING_DATABASE>)
+# connection = get_db_connection(username='root', password=<YOUR_MYSQL_PASSWORD>, host='localhost', port=3306, database=<YOUR_EXISTING_DATABASE>)
 # create_sales_table(connection=connection)
 # load_third_party(connection=connection, file_path_csv='/Users/derek-funk/Documents/data-engineering/unit-15-data-pipelines/data-pipeline-mini-project/third_party_sales_1.csv')
 # tickets_ranked = query_popular_tickets(connection=connection)
