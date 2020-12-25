@@ -1,0 +1,7 @@
+(base) derek-funk@/Users/derek-funk/Documents/data-engineering/unit-15-data-pipelines/data-pipeline-mini-project $ python data-pipeline-mini-project.py
+Here are the most popular tickets in the past month (most popular on top):
+- Christmas Spectacular
+- Washington Spirits vs Sky Blue FC
+- The North American International Auto Show
+- Carlisle Ford Nationals
+(base) derek-funk@/Users/derek-funk/Documents/data-engineering/unit-15-data-pipelines/data-pipeline-mini-project $
