@@ -11,10 +11,10 @@ class Pipeline():
 
 msd_pipeline = Pipeline()
 
-# msd_pipeline.download_torrent_on_mac(
-#     download_url='https://academictorrents.com/download/e0b6b5ff012fcda7c4a14e4991d8848a6a2bf52b.torrent',
-#     target_folder='/Users/derek-funk/Documents/data-engineering/springboard-derek-funk/capstone/msd'
-# )
+msd_pipeline.download_torrent_on_mac(
+    download_url='https://academictorrents.com/download/e0b6b5ff012fcda7c4a14e4991d8848a6a2bf52b.torrent',
+    target_folder='/Users/derek-funk/Documents/data-engineering/springboard-derek-funk/capstone/msd'
+)
 
 msd_pipeline.migrate_to_mysql(
     mysql_server='localhost',
