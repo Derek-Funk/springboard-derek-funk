@@ -1,0 +1,123 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/derek-funk/spark-3.0.1-bin-hadoop2.7/jars/spark-unsafe_2.12-3.0.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+21/02/20 17:46:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/02/20 17:46:55 INFO SparkContext: Running Spark version 3.0.1
+21/02/20 17:46:55 INFO ResourceUtils: ==============================================================
+21/02/20 17:46:55 INFO ResourceUtils: Resources for spark.driver:
+
+21/02/20 17:46:55 INFO ResourceUtils: ==============================================================
+21/02/20 17:46:55 INFO SparkContext: Submitted application: Spark Mini-Project
+21/02/20 17:46:55 INFO SecurityManager: Changing view acls to: derek-funk
+21/02/20 17:46:55 INFO SecurityManager: Changing modify acls to: derek-funk
+21/02/20 17:46:55 INFO SecurityManager: Changing view acls groups to: 
+21/02/20 17:46:55 INFO SecurityManager: Changing modify acls groups to: 
+21/02/20 17:46:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(derek-funk); groups with view permissions: Set(); users  with modify permissions: Set(derek-funk); groups with modify permissions: Set()
+21/02/20 17:46:55 INFO Utils: Successfully started service 'sparkDriver' on port 59952.
+21/02/20 17:46:55 INFO SparkEnv: Registering MapOutputTracker
+21/02/20 17:46:55 INFO SparkEnv: Registering BlockManagerMaster
+21/02/20 17:46:55 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/02/20 17:46:55 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/02/20 17:46:55 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+21/02/20 17:46:55 INFO DiskBlockManager: Created local directory at /private/var/folders/s7/k99jghdn7c70x0f5v6158ncw0000gn/T/blockmgr-a0d6eef3-a567-45fb-a19c-99a4bdd8a319
+21/02/20 17:46:55 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+21/02/20 17:46:55 INFO SparkEnv: Registering OutputCommitCoordinator
+21/02/20 17:46:55 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/02/20 17:46:55 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.0.15:4040
+21/02/20 17:46:55 INFO Executor: Starting executor ID driver on host 192.168.0.15
+21/02/20 17:46:55 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 59953.
+21/02/20 17:46:55 INFO NettyBlockTransferService: Server created on 192.168.0.15:59953
+21/02/20 17:46:55 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/02/20 17:46:55 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.0.15, 59953, None)
+21/02/20 17:46:55 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.0.15:59953 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.15, 59953, None)
+21/02/20 17:46:55 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.0.15, 59953, None)
+21/02/20 17:46:55 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.0.15, 59953, None)
+21/02/20 17:46:56 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 124.6 KiB, free 434.3 MiB)
+21/02/20 17:46:56 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 23.5 KiB, free 434.3 MiB)
+21/02/20 17:46:56 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.0.15:59953 (size: 23.5 KiB, free: 434.4 MiB)
+21/02/20 17:46:56 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:0
+21/02/20 17:46:56 INFO FileInputFormat: Total input paths to process : 1
+21/02/20 17:46:57 INFO SparkContext: Starting job: foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35
+21/02/20 17:46:57 INFO DAGScheduler: Registering RDD 3 (groupByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:24) as input to shuffle 1
+21/02/20 17:46:57 INFO DAGScheduler: Registering RDD 7 (reduceByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:34) as input to shuffle 0
+21/02/20 17:46:57 INFO DAGScheduler: Got job 0 (foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35) with 1 output partitions
+21/02/20 17:46:57 INFO DAGScheduler: Final stage: ResultStage 2 (foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35)
+21/02/20 17:46:57 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+21/02/20 17:46:57 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+21/02/20 17:46:57 INFO DAGScheduler: Submitting ShuffleMapStage 0 (PairwiseRDD[3] at groupByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:24), which has no missing parents
+21/02/20 17:46:57 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 11.7 KiB, free 434.2 MiB)
+21/02/20 17:46:57 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.1 KiB, free 434.2 MiB)
+21/02/20 17:46:57 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.0.15:59953 (size: 7.1 KiB, free: 434.4 MiB)
+21/02/20 17:46:57 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1223
+21/02/20 17:46:57 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (PairwiseRDD[3] at groupByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:24) (first 15 tasks are for partitions Vector(0))
+21/02/20 17:46:57 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+21/02/20 17:46:57 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, 192.168.0.15, executor driver, partition 0, PROCESS_LOCAL, 7421 bytes)
+21/02/20 17:46:57 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+21/02/20 17:46:57 INFO HadoopRDD: Input split: file:/Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/data.csv:0+993
+21/02/20 17:46:58 INFO PythonRunner: Times: total = 431, boot = 421, init = 9, finish = 1
+21/02/20 17:46:58 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1806 bytes result sent to driver
+21/02/20 17:46:58 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 801 ms on 192.168.0.15 (executor driver) (1/1)
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+21/02/20 17:46:58 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 59954
+21/02/20 17:46:58 INFO DAGScheduler: ShuffleMapStage 0 (groupByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:24) finished in 0.914 s
+21/02/20 17:46:58 INFO DAGScheduler: looking for newly runnable stages
+21/02/20 17:46:58 INFO DAGScheduler: running: Set()
+21/02/20 17:46:58 INFO DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 2)
+21/02/20 17:46:58 INFO DAGScheduler: failed: Set()
+21/02/20 17:46:58 INFO DAGScheduler: Submitting ShuffleMapStage 1 (PairwiseRDD[7] at reduceByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:34), which has no missing parents
+21/02/20 17:46:58 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 12.9 KiB, free 434.2 MiB)
+21/02/20 17:46:58 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 7.4 KiB, free 434.2 MiB)
+21/02/20 17:46:58 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.0.15:59953 (size: 7.4 KiB, free: 434.4 MiB)
+21/02/20 17:46:58 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1223
+21/02/20 17:46:58 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 1 (PairwiseRDD[7] at reduceByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:34) (first 15 tasks are for partitions Vector(0))
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+21/02/20 17:46:58 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, 192.168.0.15, executor driver, partition 0, NODE_LOCAL, 7132 bytes)
+21/02/20 17:46:58 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+21/02/20 17:46:58 INFO ShuffleBlockFetcherIterator: Getting 1 (304.0 B) non-empty blocks including 1 (304.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/20 17:46:58 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+21/02/20 17:46:58 INFO PythonRunner: Times: total = 9, boot = -316, init = 324, finish = 1
+21/02/20 17:46:58 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1978 bytes result sent to driver
+21/02/20 17:46:58 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 71 ms on 192.168.0.15 (executor driver) (1/1)
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+21/02/20 17:46:58 INFO DAGScheduler: ShuffleMapStage 1 (reduceByKey at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:34) finished in 0.099 s
+21/02/20 17:46:58 INFO DAGScheduler: looking for newly runnable stages
+21/02/20 17:46:58 INFO DAGScheduler: running: Set()
+21/02/20 17:46:58 INFO DAGScheduler: waiting: Set(ResultStage 2)
+21/02/20 17:46:58 INFO DAGScheduler: failed: Set()
+21/02/20 17:46:58 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[10] at foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35), which has no missing parents
+21/02/20 17:46:58 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 10.0 KiB, free 434.2 MiB)
+21/02/20 17:46:58 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 434.2 MiB)
+21/02/20 17:46:58 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.168.0.15:59953 (size: 5.6 KiB, free: 434.4 MiB)
+21/02/20 17:46:58 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1223
+21/02/20 17:46:58 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (PythonRDD[10] at foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35) (first 15 tasks are for partitions Vector(0))
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+21/02/20 17:46:58 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, 192.168.0.15, executor driver, partition 0, NODE_LOCAL, 7143 bytes)
+21/02/20 17:46:58 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+21/02/20 17:46:58 INFO ShuffleBlockFetcherIterator: Getting 1 (117.0 B) non-empty blocks including 1 (117.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) remote blocks
+21/02/20 17:46:58 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+('Nissan-2003', 1)
+('Mercedes-2015', 2)
+('Mercedes-2016', 1)
+21/02/20 17:46:58 INFO PythonRunner: Times: total = 4, boot = -62, init = 66, finish = 0
+21/02/20 17:46:58 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1807 bytes result sent to driver
+21/02/20 17:46:58 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 37 ms on 192.168.0.15 (executor driver) (1/1)
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+21/02/20 17:46:58 INFO DAGScheduler: ResultStage 2 (foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35) finished in 0.066 s
+21/02/20 17:46:58 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+21/02/20 17:46:58 INFO TaskSchedulerImpl: Killing all running tasks in stage 2: Stage finished
+21/02/20 17:46:58 INFO DAGScheduler: Job 0 finished: foreach at /Users/derek-funk/Documents/data-engineering/unit-20-spark/spark-mini-project/autoinc_spark.py:35, took 1.145784 s
+21/02/20 17:46:58 INFO SparkContext: Invoking stop() from shutdown hook
+21/02/20 17:46:58 INFO SparkUI: Stopped Spark web UI at http://192.168.0.15:4040
+21/02/20 17:46:58 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+21/02/20 17:46:58 INFO MemoryStore: MemoryStore cleared
+21/02/20 17:46:58 INFO BlockManager: BlockManager stopped
+21/02/20 17:46:58 INFO BlockManagerMaster: BlockManagerMaster stopped
+21/02/20 17:46:58 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+21/02/20 17:46:58 INFO SparkContext: Successfully stopped SparkContext
+21/02/20 17:46:58 INFO ShutdownHookManager: Shutdown hook called
+21/02/20 17:46:58 INFO ShutdownHookManager: Deleting directory /private/var/folders/s7/k99jghdn7c70x0f5v6158ncw0000gn/T/spark-40e01223-1c43-4160-8471-df02994e1664/pyspark-3f5d6e4a-e2f5-49bd-b587-4a372c8308a9
+21/02/20 17:46:58 INFO ShutdownHookManager: Deleting directory /private/var/folders/s7/k99jghdn7c70x0f5v6158ncw0000gn/T/spark-40e01223-1c43-4160-8471-df02994e1664
+21/02/20 17:46:58 INFO ShutdownHookManager: Deleting directory /private/var/folders/s7/k99jghdn7c70x0f5v6158ncw0000gn/T/spark-8ef00786-7810-4fd2-88c7-be0e6c4cc6bd
