@@ -4,7 +4,7 @@ This project sets up an Airflow workflow that emails you the daily 1-minute inte
 # Workflow Set Up
 * download docker and docker-compose
 * start docker engine
-* download this repository
+* download this folder
 * if you would like Airflow to send you emails, create a new gmail account with the *Less secure app access* feature ON
 * in *airflow/airflow.cfg*, change:
     * *smtp_user* and *smtp_mail_from* to the full email address
