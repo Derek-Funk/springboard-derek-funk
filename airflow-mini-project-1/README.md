@@ -15,7 +15,7 @@ This project sets up an Airflow workflow that emails you the daily 1-minute inte
 * open the web scheduler in a browser at http://localhost:8080/
 * find the DAG *marketvol* and toggle it ON
 * You should now receive an email every weekday at 6pm with Apple and Tesla stock price data as attachments. It will look like this: ![This is a alt text.](images/image_emailAttachments.png "image_emailAttachments.png")
-* If the DAG run is unsuccessful, you will receive an email for each task failure with a link to the web server in order to diagnose.
+* if the DAG run is unsuccessful, you will receive an email for each task failure with a link to the web server in order to diagnose
 * you can shutdown the app at anytime: $ docker-compose down
 
 # Manual DAG Run
