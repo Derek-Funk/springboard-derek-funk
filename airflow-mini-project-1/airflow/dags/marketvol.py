@@ -10,7 +10,7 @@ default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
     'email': ['derek.visitor11@gmail.com'],
-    'email_on_failure': False,
+    'email_on_failure': True,
     'email_on_retry': False,
     'retries': 2,
     'retry_delay': timedelta(minutes=5),
@@ -51,6 +51,7 @@ t0 = BashOperator(
 
 # t1, t2: this downloads today's stock files
 def download_stock_data(ticker, start_date, end_date):
+    # raise Exception #test
     df = yf.download(ticker, start=start_date, end=end_date, interval='1m')
     df.to_csv('{}_{}.csv'.format(ticker, start_date), header=False)
     return
