@@ -11,14 +11,14 @@ The infrastructure involves a Docker container per component of the Airflow appl
 * in *airflow/airflow.cfg*, change:
     * *smtp_user* and *smtp_mail_from* to the full email address
     * *smtp_password* to the email password
-* in the repository, open a command line shell build the containers: `$ docker-compose up -d --build`
-* view status of containers: $ docker ps
-* see contents of a container: $ docker exec -it <CONTAINER ID> bash
+* in the repository, open a command line shell and build the containers: `$ docker-compose up -d --build`
+* to view the status of the containers: `$ docker ps`
+* to see the contents of a container: `$ docker exec -it <CONTAINER ID> bash`
 * open the web scheduler in a browser at http://localhost:8080/
 * find the DAG *marketvol* and toggle it ON
 * You should now receive an email every weekday at 6pm with Apple and Tesla stock price data as attachments. It will look like this: ![This is a alt text.](images/image_emailAttachments.png "image_emailAttachments.png")
 * if the DAG run is unsuccessful, you will receive an email for each task failure with a link to the web server in order to diagnose
-* you can shutdown the app at anytime: $ docker-compose down
+* you can shutdown the app at anytime: `$ docker-compose down`
 
 # Manual DAG Run
 * you can manually trigger the DAG in the web scheduler UI
