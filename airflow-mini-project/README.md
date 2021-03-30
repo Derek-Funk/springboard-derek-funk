@@ -11,7 +11,7 @@ The infrastructure involves a Docker container per component of the Airflow appl
 * in *airflow/airflow.cfg*, change:
     * *smtp_user* and *smtp_mail_from* to the full email address
     * *smtp_password* to the email password
-* in the repository, build the containers: $ docker-compose up -d --build
+* in the repository, open a command line shell build the containers: `$ docker-compose up -d --build`
 * view status of containers: $ docker ps
 * see contents of a container: $ docker exec -it <CONTAINER ID> bash
 * open the web scheduler in a browser at http://localhost:8080/
