@@ -35,7 +35,7 @@ dag = DAG(
     description='marketvol',
     schedule_interval='0 18 * * 1,2,3,4,5', #run every weekday at 6pm
     start_date=datetime(2021, 3, 12), #1st available weekday as of this dag's creation
-    tags=['airflow-mini-project-1'],
+    tags=['airflow-mini-project'],
 )
 
 # start_date = date(2021, 3, 12) #test

@@ -1,7 +1,9 @@
-# Airflow Mini-Project 1
-This project sets up an Airflow workflow that emails you the daily 1-minute interval stock price data for Apple and Tesla, every weekday at 6pm.
+# Airflow Mini-Project
+This project sets up an Airflow workflow that emails you the daily 1-minute interval stock price data for Apple and Tesla, every weekday at 6pm local time.
 
-# Workflow Set Up
+The infrastructure involves a Docker container per component of the Airflow application: web server, scheduler, worker, executor, and metadata stores. Although a Celery (parallel) executor is used, only 1 worker is used effectively reducing the processing to a Sequential (linear) executor.
+
+# How you can replicate this project
 * download docker and docker-compose
 * start docker engine
 * download this repository
