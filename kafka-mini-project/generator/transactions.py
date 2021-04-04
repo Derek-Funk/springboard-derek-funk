@@ -9,7 +9,7 @@ def _random_account_id() -> str:
     return "".join(choices(account_chars, k=12))
 
 def _random_amount() -> float:
-    """Return a random amount between 1.00 and 10000.00."""
+    """Return a random amount between 1.00 and 1000.00."""
     return randint(100, 100000) / 100
 
 def create_random_transaction() -> dict:
