@@ -7,7 +7,7 @@ services:
     environment:
       KAFKA_BROKER_URL: broker:9092
       TRANSACTIONS_TOPIC: queueing.transactions
-      TRANSACTIONS_PER_SECOND: 5
+      TRANSACTIONS_PER_SECOND: 20
   detector:
     build: ./detector
     environment:
