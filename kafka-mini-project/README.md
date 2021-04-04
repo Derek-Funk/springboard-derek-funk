@@ -21,3 +21,5 @@ This project demonstrates the use of a single-broker Apache Kafka infrastructure
 
 # Architecture Diagram
 ![This is a alt text.](images/architecture-diagram.png "Architecture diagram.")
+
+![](images/streaming-example.pm4)
