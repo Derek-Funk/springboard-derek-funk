@@ -1,6 +1,8 @@
 # Kafka Mini-Project
 This project demonstrates the use of a single-broker Apache Kafka infrastructure using Docker. A producer will stream any number of fake credit card transactions to the Kafka cluster, which a consumer will then process as legit or fraudulent. Since the focus of this project is on Kafka infrastructure, the fraudulence detector has a trivial algorithm of designating the top 10% of transactions as fraud.
 
+![](images/streaming-example.gif)
+
 # How you can replicate this project
 * download docker and docker-compose
 * download this directory
@@ -21,5 +23,3 @@ This project demonstrates the use of a single-broker Apache Kafka infrastructure
 
 # Architecture Diagram
 ![This is a alt text.](images/architecture-diagram.png "Architecture diagram.")
-
-![](images/streaming-example.gif)
