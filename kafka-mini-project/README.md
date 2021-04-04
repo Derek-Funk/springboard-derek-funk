@@ -14,10 +14,10 @@ This project demonstrates the use of a single-broker Apache Kafka infrastructure
 * to view just the continous stream of transactions designated as legit by the consumer, in a new terminal: `$ docker-compose -f docker-compose.kafka.yml exec broker kafka-console-consumer --bootstrap-server localhost:9092 --topic streaming.transactions.legit`
 * to view just the continous stream of transactions designated as fraudulent by the consumer, in a new terminal: `$ docker-compose -f docker-compose.kafka.yml exec broker kafka-console-consumer --bootstrap-server localhost:9092 --topic streaming.transactions.fraud`
 * to change the # transactions generated per second:
-    * stop the producer/consumer group: CTRL+C
+    * stop the producer/consumer group: Ctrl+C
     * in docker-compose.yml, increase TRANSACTIONS_PER_SECOND to 1000, for example
     * rebuild the producer/consumer containers and note the difference!: `$ docker-compose -f docker-compose.yml up --build`
-* stop the cluster: CTRL+C or `$ docker-compose down`
+* stop the cluster: Ctrl+C or `$ docker-compose down`
 
 # Architecture Diagram
 ![This is a alt text.](images/architecture-diagram.png "Architecture diagram.")
