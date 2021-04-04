@@ -4,7 +4,7 @@ This project demonstrates the use of a single-broker Apache Kafka infrastructure
 # How you can replicate this project
 * download docker and docker-compose
 * download this directory
-* in this directory, create a network around Kafka: `$ docker network create kafka-network`.
+* in this directory, create a Kafka network: `$ docker network create kafka-network`.
     * in this project, the Zookeeper and broker containers will be spun up as one group, while the producer and consumer will be spun up as another group (notice the 2 docker-compose files)
     * this network allows these 2 groups to communicate with each other
 * start the Kafka cluster: `$ docker-compose -f docker-compose.kafka.yml up`
