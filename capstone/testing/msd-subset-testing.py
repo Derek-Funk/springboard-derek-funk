@@ -1,6 +1,9 @@
 # remote:
 # $ pip3 install pytest
 
+# run tests:
+# $ pytest msd-subset-testing.py -v
+
 import sqlalchemy as db
 import urllib
 
