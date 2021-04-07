@@ -8,7 +8,7 @@ to process any big data source of their choosing.
 
 ## 1.2 - Topic
 I chose to work with the [Million Song Dataset](http://millionsongdataset.com/), a collection of 1 million songs and related data such
-as artists, genres, popularity, etc. My goal was to take all these unstructured data (which were spread across Hierarchical Data Format (HDF) files, SQLite databases, and text files in various directories) into 1 database where all the same data was structured, logically connected, and easily accessible.
+as artists, genres, popularity, etc. My goal was to process all these unstructured data (which were spread across Hierarchical Data Format (HDF) files, SQLite databases, and text files in various directories) into 1 database where all the same data would be in a new form that was structured, logically connected, and easily accessible.
 
 ## 1.3 - Dataset
 There are 3 variations of the Million Song Dataset, which I will abbreviate as MSD going forward:
