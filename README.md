@@ -1,4 +1,4 @@
-# Springboard
+# Derek's Data Engineering Projects
 This repository holds all projects for Derek's Springboard Data Engineering Bootcamp. For each project, I go through:
 1. What was done, what tools were used, and all related code
 2. How the project was done, including images/gifs on the architecture
