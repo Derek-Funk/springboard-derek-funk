@@ -16,8 +16,10 @@ There are 3 variations of the Million Song Dataset, which I will abbreviate as M
 2. The same subset as above except available on AWS as an EBS volume. I will call this the <em>AWS subset</em>.
 3. The full MSD also available as an AWS EBS volume. I will call this the <em>AWS MSD</em>.
 
+### 1.3.1 - BitTorrent subset
 The <em>BitTorrent subset</em> is available on [Academic Torrents](https://academictorrents.com/details/e0b6b5ff012fcda7c4a14e4991d8848a6a2bf52b). This subset of randomly sampled 10,000 songs amounts to about 3 GB (1% of the full MSD). This dataset was used as a prototype pipeline using a local MySQL database as the destination. Section 2 walks through this local pipeline.
 
+### 1.3.2 - AWS subset
 The <em>AWS subset</em> is available 
 
 
