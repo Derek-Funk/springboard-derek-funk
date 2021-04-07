@@ -21,5 +21,4 @@ This project demonstrates the use of a single-broker Apache Kafka architecture u
     * rebuild the producer/consumer containers and note the difference!: `$ docker-compose -f docker-compose.yml up --build`
 * stop the cluster: Ctrl+C or `$ docker-compose down`
 
-# Architecture Diagram
-![This is a alt text.](images/architecture-diagram.png "Architecture diagram.")
+
