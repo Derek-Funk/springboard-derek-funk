@@ -1,3 +1,5 @@
+THIS README IS NOT YET FINAL...
+
 # 1 - Background
 
 ## 1.1 - Objective
