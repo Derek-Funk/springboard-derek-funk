@@ -1,4 +1,10 @@
-# Capstone Step 5
+# Purpose
+The purpose of this pipeline was to get an end-to-end process from the MSD subset to a local database, which in my case was MySQL. It also
+helped in figuring out:
+1. What the final Entity Relationship Diagram (ERD) of the database would be
+2. How to use the Python package SQLAlchemy to connect to a database and create/populate the database
+
+
 
 ## Files
 * download_torrent_on_mac.py - this module can be used to download a torrent via BitTorrent technology
