@@ -21,9 +21,9 @@ Here is a simple diagram of the local pipeline dataflow (built with [Visual Para
 
 ## 2.5 - How to reproduce this pipeline
 * on your local machine, download the 3 Python scripts
+* move download_torrent_on_mac.py and migrate_to_mysql.py to a new folder called <em>msd</em>
 * verify you have a local installation of MySQL
-* update the code files with your MySQL credentials
-* run the master.py file
+* update master.py with your MySQL credentials and run it
 
 ## 2.6 - Runtime estimates
 * download_torrent_on_mac.py - this portion takes on average 45 minutes, though can fluctuate a lot
