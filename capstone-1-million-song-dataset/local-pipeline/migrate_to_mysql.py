@@ -512,4 +512,5 @@ def migrate_to_mysql(mysql_server, mysql_username, mysql_password, mysql_port, m
           '-' * 100 + '\n', sep='\n')
     return
 
-# migrate_to_mysql(mysql_server='localhost', mysql_username='root', mysql_password='Leanmeanandg!1', mysql_port=3306, mysql_db='msd')
+# example usage
+# migrate_to_mysql(mysql_server='localhost', mysql_username='root', mysql_password=<mysql_password>, mysql_port=3306, mysql_db='msd')
