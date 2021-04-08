@@ -19,7 +19,7 @@ msd_pipeline.download_torrent_on_mac(
 msd_pipeline.migrate_to_mysql(
     mysql_server='localhost',
     mysql_username='root',
-    mysql_password='Leanmeanandg!1',
+    mysql_password=<mysql_password>,
     mysql_port=3306,
     mysql_db='msd'
 )
