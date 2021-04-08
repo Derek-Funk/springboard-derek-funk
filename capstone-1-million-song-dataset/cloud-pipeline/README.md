@@ -9,3 +9,6 @@ There are a few major differences with this approach:
 
 ## 3.2 - Database Design
 The ERD for the Azure SQL Database is the same as the MySQL database in the <em>Local Pipeline</em>. Here it is again for reference:
+![image did not render](architecture/msd-erd.png "msd-erd.png")
+
+## 3.3 - Pipeline Design
