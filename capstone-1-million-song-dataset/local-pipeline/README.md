@@ -7,11 +7,11 @@ helped in figuring out:
 2. How to use the Python package SQLAlchemy to connect to a database and create/populate the database
 
 ## 2.2 Database Design
-Here is the final ERD that resulted for the destination database:
+Here is the final ERD that resulted for the destination database (built with [draw.io](https://app.diagrams.net/):
 ![image did not render](architecture/msd-erd.png "msd-erd.png")
 
 ## 2.3 Pipeline Design
-Here is a simple diagram of the local pipeline dataflow:
+Here is a simple diagram of the local pipeline dataflow (built with [Visual Paradigm Online](https://online.visual-paradigm.com/login.jsp?t=diagrams):
 ![image did not render](architecture/local-pipeline-diagram.png "local-pipeline-diagram.png")
 
 ## Files
