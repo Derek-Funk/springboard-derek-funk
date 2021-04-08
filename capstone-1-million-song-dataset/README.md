@@ -31,7 +31,7 @@ The <em>AWS MSD</em> is also available as an AWS EBS Snapshot (link TBD). Due to
 Navigate to [local-pipeline](https://github.com/Derek-Funk/springboard-derek-funk/tree/master/capstone-1-million-song-dataset/local-pipeline)
 for more details.
 
-# 3 - Cloud Pipeline with AWS S3 and Azure SQL
+# 3 - Cloud Pipeline with AWS and Azure
 
 # 3.1 Cloud Pipeline Architecture
 
