@@ -21,3 +21,11 @@ Getting the dataset from AWS is not as straightforward as downloading it directl
 code/s3-to-azure-msd-subset.py - this script is what the Azure VM uses to retrieve data from AWS S3, and then use SQLAlchemy to transform the data into tables that get loaded into Azure SQL Database
 
 ## 3.5 - How to reproduce this pipeline
+This section is divided into 2 parts:
+1. getting the AWS snapshot into an S3 bucket
+2. processing the data from S3 to the Azure SQL Database
+
+### 3.5.1 - AWS EBS Snapshot -> AWS S3
+
+
+### 3.5.2 - AWS S3 -> Azure SQL Database
