@@ -56,4 +56,7 @@ aws s3 cp --recursive /mnt/snap s3://<bucket-name>
 - reserve the VM's public IP address so that it does not change everytime the VM restarts
 - back in the SQL server, add the VM's public IP address to the firewall settings so that the VM can send data to the database
 - Connect to the VM. I used Visual Studio Code, an editor that allows you to ssh to the VM. You just need to provide the VM's public IP address.
-- 
+- once in the VM, create a file <em>s3-to-azure-msd-subset.py</em> and copy the contents of code/s3-to-azure-msd-subset.py to it
+- Run all the Linux commands from the Python script under # remote:. This will install all requirements needed to run the Python script.
+- run the entire Python script (takes several hours)
+- verify the tables in the database and disconnect from the VM
