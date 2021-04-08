@@ -28,8 +28,8 @@ The <em>AWS MSD</em> is also available as an AWS EBS Snapshot (link TBD). Due to
 <em>AWS subset</em>.
 
 # 2 - Local Pipeline with BitTorrent and MySQL
-
-# 2.1 Local Pipeline Architecture
+Navigate to [local-pipeline](https://github.com/Derek-Funk/springboard-derek-funk/tree/master/capstone-1-million-song-dataset/local-pipeline)
+for more details.
 
 # 3 - Cloud Pipeline with AWS S3 and Azure SQL
 
