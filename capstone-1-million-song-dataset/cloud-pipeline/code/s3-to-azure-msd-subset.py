@@ -650,5 +650,5 @@ msd_subset.insert_track_data(idx_first_folder=1, idx_last_folder=894)
 t1 = time.time()
 print((t1-t0)/60)
 
-msd_subset.drop_tables()
+# msd_subset.drop_tables()
 msd_subset.disconnect_azure_sql()
