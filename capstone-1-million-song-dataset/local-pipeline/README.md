@@ -20,7 +20,10 @@ Here is a simple diagram of the local pipeline dataflow (built with [Visual Para
 * code/master.py - this file can be used to run the above 2 in order to complete the download and migration in one run
 
 ## 2.5 - How to reproduce this pipeline
-The master.py shows how everything was run on my local machine. All the inputs in this file can be replaced with another Mac user's to run this pipeline on their machine.
+* download the code folder to your local machine
+* verify you have a local installation of MySQL
+* update the code files with your MySQL credentials
+* run the master.py file
 
 ## 2.6 - Runtime estimates
 * download_torrent_on_mac.py - this portion takes on average 45 minutes, though can fluctuate a lot
