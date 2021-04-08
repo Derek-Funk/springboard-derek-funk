@@ -49,3 +49,11 @@ aws s3 cp --recursive /mnt/snap s3://<bucket-name>
 - delete the EC2 instance and EBS volume as they are no longer needed
 
 ### 3.5.2 - AWS S3 -> Azure SQL Database
+- in your Azure account, create a SQL server
+- in the SQL server, create a SQL database with around 5 GB of storage
+- create a Virtual network
+- spin up a VM of size at least as big as <em>Standard B1ms (1 vcpus, 2 GiB memory)</em> and add it to the Virtual network
+- reserve the VM's public IP address so that it does not change everytime the VM restarts
+- back in the SQL server, add the VM's public IP address to the firewall settings so that the VM can send data to the database
+- Connect to the VM. I used Visual Studio Code, an editor that allows you to ssh to the VM. You just need to provide the VM's public IP address.
+- 
