@@ -26,6 +26,26 @@ This section is divided into 2 parts:
 2. processing the data from S3 to the Azure SQL Database
 
 ### 3.5.1 - AWS EBS Snapshot -> AWS S3
-
+- in your AWS account, create an S3 bucket
+- spin up a basic Ubuntu EC2 instance
+- give the EC2 instance the role <em>AmazonS3FullAccess</em>
+- search for the EBS Snapshot with Snapshot ID = snap-2767d046
+- Select the snapshot and create a volume from it. Make sure you give the volume the same Availability Zone as the EC2 instance.
+- Attach the volume to the EC2 instance. Take note of the mount drive (e.g. "/dev/xvdg").
+- connect to the EC2 instance via EC2 Instance Connect
+- mount the snapshot drive and verify its contents (change mount drive if yours is different):
+```
+sudo mkdir /mnt/snap
+sudo mount -t ext4 /dev/xvdg /mnt/snap
+ls /mnt/snap
+```
+- copy entire folder contents to your S3 bucket (takes about 3 minutes):
+```
+sudo apt update
+sudo apt install awscli
+aws s3 cp --recursive /mnt/snap s3://<bucket-name>
+```
+- verify the contents in your S3 bucket
+- delete the EC2 instance and EBS volume as they are no longer needed
 
 ### 3.5.2 - AWS S3 -> Azure SQL Database
