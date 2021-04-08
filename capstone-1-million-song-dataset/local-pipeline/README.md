@@ -1,4 +1,6 @@
-# Purpose
+# 2 - Local Pipeline with BitTorrent and MySQL
+
+## 2.1 - Purpose
 The purpose of this pipeline was to get an end-to-end process from the MSD subset to a local database, which in my case was MySQL. It also
 helped in figuring out:
 1. What the final Entity Relationship Diagram (ERD) of the database would be
