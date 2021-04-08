@@ -7,6 +7,8 @@ helped in figuring out:
 2. How to use the Python package SQLAlchemy to connect to a database and create/populate the database
 
 ## 2.2 Local Pipeline Architecture
+After much exploration of the data, here is the final ERD that resulted for the destination database:
+![This is a alt text.](/image/sample.png "msd-erd.png")
 
 ## Files
 * download_torrent_on_mac.py - this module can be used to download a torrent via BitTorrent technology
