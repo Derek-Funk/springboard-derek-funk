@@ -32,7 +32,7 @@ Navigate to [local-pipeline](https://github.com/Derek-Funk/springboard-derek-fun
 for more details.
 
 # 3 - Cloud Pipeline with AWS and Azure
-
-# 3.1 Cloud Pipeline Architecture
+Navigate to [cloud-pipeline](https://github.com/Derek-Funk/springboard-derek-funk/tree/master/capstone-1-million-song-dataset/cloud-pipeline)
+for more details.
 
 # 4 - Challenges & Future Improvements
