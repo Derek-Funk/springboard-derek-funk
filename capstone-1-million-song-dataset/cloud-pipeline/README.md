@@ -16,3 +16,8 @@ Here is the dataflow for the cloud pipeline:
 ![image did not render](architecture/cloud-pipeline-diagram.png "cloud-pipeline-diagram.png")
 
 Getting the dataset from AWS is not as straightforward as downloading it directly to Azure. Since the dataset is stored as an AWS EBS snapshot, it must be mounted onto an EC2 instance and then downloaded to an S3 bucket. Only then can Azure access the data from AWS.
+
+## 3.4 - Code
+code/s3-to-azure-msd-subset.py - this script is what the Azure VM uses to retrieve data from AWS S3, and then use SQLAlchemy to transform the data into tables that get loaded into Azure SQL Database
+
+## 3.5 - How to reproduce this pipeline
