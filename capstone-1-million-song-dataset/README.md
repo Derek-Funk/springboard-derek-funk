@@ -35,4 +35,4 @@ The <em>AWS MSD</em> is also available as an AWS EBS Snapshot (link TBD). Due to
 
 # 3.1 Cloud Pipeline Architecture
 
-# 4 - Future Improvements
+# 4 - Challenges & Future Improvements
