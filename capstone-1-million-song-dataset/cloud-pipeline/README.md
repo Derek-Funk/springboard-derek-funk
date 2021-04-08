@@ -12,3 +12,7 @@ The ERD for the Azure SQL Database is the same as the MySQL database in the <em>
 ![image did not render](architecture/msd-erd.png "msd-erd.png")
 
 ## 3.3 - Pipeline Design
+Here is the dataflow for the cloud pipeline:
+![image did not render](architecture/cloud-pipeline-diagram.png "cloud-pipeline-diagram.png")
+
+Getting the dataset from AWS is not as straightforward as downloading it directly to Azure. Since the dataset is stored as an AWS EBS snapshot, it must be mounted onto an EC2 instance and then downloaded to an S3 bucket. Only then can Azure access the data from AWS.
