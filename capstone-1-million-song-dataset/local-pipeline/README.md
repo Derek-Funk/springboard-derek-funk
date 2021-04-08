@@ -20,7 +20,7 @@ Here is a simple diagram of the local pipeline dataflow (built with [Visual Para
 * code/master.py - this file can be used to run the above 2 in order to complete the download and migration in one run
 
 ## 2.5 - How to reproduce this pipeline
-* download the code folder to your local machine
+* on your local machine, download the 3 Python scripts
 * verify you have a local installation of MySQL
 * update the code files with your MySQL credentials
 * run the master.py file
