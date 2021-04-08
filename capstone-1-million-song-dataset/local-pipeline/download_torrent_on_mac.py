@@ -62,6 +62,7 @@ def download_torrent_on_mac(download_url, target_folder):
     download_time = round((t3 - t0) / 60)
     print('\n' + '-' * 100, 'END OF STAGE 1: DOWNLOADING TORRENT', f'Stage 1 duration: {download_time} minutes.', '-' * 100 + '\n', sep='\n')
 
+# example usage
 # download_torrent_on_mac(
 #     download_url='https://academictorrents.com/download/e0b6b5ff012fcda7c4a14e4991d8848a6a2bf52b.torrent',
 #     target_folder='/Users/derek-funk/Documents/data-engineering/springboard-derek-funk/capstone/msd'
