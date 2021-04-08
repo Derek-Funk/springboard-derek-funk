@@ -6,9 +6,13 @@ helped in figuring out:
 1. What the final Entity Relationship Diagram (ERD) of the database would be
 2. How to use the Python package SQLAlchemy to connect to a database and create/populate the database
 
-## 2.2 Local Pipeline Architecture
-After much exploration of the data, here is the final ERD that resulted for the destination database:
-![This is a alt text.](/image/sample.png "msd-erd.png")
+## 2.2 Database Design
+Here is the final ERD that resulted for the destination database:
+![image did not render](architecture/msd-erd.png "msd-erd.png")
+
+## 2.3 Pipeline Design
+Here is a simple diagram of the local pipeline dataflow:
+![image did not render](architecture/local-pipeline-diagram.png "local-pipeline-diagram.png")
 
 ## Files
 * download_torrent_on_mac.py - this module can be used to download a torrent via BitTorrent technology
