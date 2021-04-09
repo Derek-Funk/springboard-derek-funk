@@ -185,7 +185,7 @@ class S3_to_azure_msd_subset:
             server = 'azure-sql-server-msd.database.windows.net'
             database = 'msd-subset'
             user = 'derekfunk'
-            password = 'Leanmeanandg!1'
+            password = <azure-sql-password>
 
             conn_str_suffix = 'Driver={};Server=tcp:{},1433;Database={};Uid={};Pwd={};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;' \
                 .format(driver, server, database, user, password)
