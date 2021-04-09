@@ -58,6 +58,7 @@ aws s3 cp --recursive /mnt/snap s3://<bucket-name>
 - Connect to the VM. I used Visual Studio Code, an editor that allows you to ssh to the VM. You just need to provide the VM's public IP address.
 - once in the VM, create a file <em>s3-to-azure-msd-subset.py</em> and copy the contents of code/s3-to-azure-msd-subset.py to it
 - Run all the Linux commands from the Python script under # remote:. This will install all requirements needed to run the Python script.
+- update the script with your Azure SQL Database credentials
 - run the entire Python script (takes several hours)
 - If you log into the SQL database, you will notice all the tables created. Additionally, you can run the file testing/msd-subset-testing.py
 in the VM to see that the sizes of all the final tables are correct:
