@@ -35,15 +35,15 @@ This section is divided into 2 parts:
 - connect to the EC2 instance via EC2 Instance Connect
 - mount the snapshot drive and verify its contents (change mount drive if yours is different):
 ```
-sudo mkdir /mnt/snap
-sudo mount -t ext4 /dev/xvdg /mnt/snap
-ls /mnt/snap
+$ sudo mkdir /mnt/snap
+$ sudo mount -t ext4 /dev/xvdg /mnt/snap
+$ ls /mnt/snap
 ```
 - copy entire folder contents to your S3 bucket (takes about 3 minutes):
 ```
-sudo apt update
-sudo apt install awscli
-aws s3 cp --recursive /mnt/snap s3://<bucket-name>
+$ sudo apt update
+$ sudo apt install awscli
+$ aws s3 cp --recursive /mnt/snap s3://<bucket-name>
 ```
 - verify the contents in your S3 bucket
 - delete the EC2 instance and EBS volume as they are no longer needed
