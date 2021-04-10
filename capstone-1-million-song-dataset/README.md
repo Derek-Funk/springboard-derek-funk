@@ -13,14 +13,14 @@ as artists, genres, popularity, etc. My goal was to process all these unstructur
 ## 1.3 - Datasets
 There are 3 variations of the Million Song Dataset, which I will abbreviate as MSD going forward:
 1. A subset of the MSD (just 10,000 songs) available via BitTorrent download. I will call this the <em>BitTorrent subset</em>.
-2. The same subset as above except available on AWS as an EBS volume. I will call this the <em>AWS subset</em>.
+2. The same subset as above except available on AWS as an Elastic Block Store (EBS) volume. I will call this the <em>AWS subset</em>.
 3. The full MSD also available as an AWS EBS volume. I will call this the <em>AWS MSD</em>.
 
 ### 1.3.1 - BitTorrent subset
 The <em>BitTorrent subset</em> is available on [Academic Torrents](https://academictorrents.com/details/e0b6b5ff012fcda7c4a14e4991d8848a6a2bf52b). This subset of randomly sampled 10,000 songs amounts to about 3 GB (1% of the full MSD). This dataset was used to build a prototype pipeline using a local MySQL database as the destination. Section 2 walks through this local pipeline.
 
 ### 1.3.2 - AWS subset
-The <em>AWS subset</em> is available as an AWS Elastic Block Store (EBS) Snapshot (link TBD). This subset was used to build a pipeline from AWS
+The <em>AWS subset</em> is available as an AWS EBS Snapshot (link TBD). This subset was used to build a pipeline from AWS
 to an Azure SQL database. Section 3 walks through this pipeline.
 
 ### 1.3.3 - AWS MSD
