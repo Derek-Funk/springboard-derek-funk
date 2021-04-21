@@ -1,8 +1,7 @@
 # 1 - Background
 
 ## 1.1 - Objective
-The first capstone in Springboard's Data Engineering bootcamp was an "open" capstone. Students could use any combination of technologies
-to process any big data source of their choosing.
+The second capstone in Springboard's Data Engineering bootcamp was a "guided" capstone. The problem statement was provided and the following technologies were used: Azure Blob Storage, Azure Databricks, PySpark DataFrames & SQL, Parquet files.
 
 ## 1.2 - Topic
 I chose to work with the [Million Song Dataset](http://millionsongdataset.com/), a collection of 1 million songs and related data such
