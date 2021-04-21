@@ -34,4 +34,18 @@ This notebook is a PySpark script which I've hosted on an Azure Databricks clust
 * structure the partitions into dataframes with well-defined schemas
 * write the partitions on the cluster as parquet files
 
+## 2.3 - ETL Stage 2
+The code for Stage 2 is contained in the Azure Databricks notebook [guidedcapstonestep3_accesskeyhidden.ipynb](code/guidedcapstonestep3_accesskeyhidden.ipynb).
+
+This notebook cleans the data of any duplicate entries and writes the cleaned, partitioned parquet files back to Blob Storage.
+
+## 2.4 - ETL Stage 3
+The code for Stage 3 is contained in the Azure Databricks notebook [guidedcapstonestep4_accesskeyhidden.ipynb](code/guidedcapstonestep4_accesskeyhidden.ipynb).
+
+This notebook does the following:
+* pulls today's quote and trade parquet files, and yesterday's trade parquet file into the cluster
+* for each of today's quotes, append the latest trade that occurred before that quote into a new column
+* append the previous day's closing trade into a new column
+* write the final parquet files back to Blob Storage
+
 # How to reproduce
