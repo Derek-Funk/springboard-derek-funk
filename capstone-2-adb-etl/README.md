@@ -7,7 +7,7 @@ The second capstone in Springboard's Data Engineering bootcamp was a "guided" ca
 This project involves an ETL that takes NASDAQ and NYSE data from Azure Blob Storage, transforms them in Azure Databricks, then writes the final output back to Blob Storage. The data are stock price transactions, most of which are quoted prices and some of which are actual traded prices. The purpose of the ETL is to transform the data in a way that results in just the quotes, with the most recent trades and yesterday's closing trade as extra columns. The following sections will make this more clear.
 
 ## 1.3 - Datasets
-All input data can be found in [data](https://github.com/Derek-Funk/springboard-derek-funk/tree/master/capstone-2-adb-etl/data), which I also have in Azure Blob Storage. These are the initial data that our ETL will process from.
+All input data can be found in [data](data), which I also have in Azure Blob Storage. These are the initial data that our ETL will process from.
 
 There is a separate folder for each stock exchange, and within 2 separate date folders (20200805, 20200806). At the child level, you can examine what each of the data files looks like. For NYSE, note that they are text files with comma-separated values while NASDAQ has a json format. Though they are formatted differently, they contain the same type of data.
 
@@ -49,7 +49,22 @@ This notebook does the following:
 * write the final parquet files back to Blob Storage
 
 # 3 - How to reproduce
-* Azure setup
+* Azure Storage setup
   * in your Azure account, create a resource group for this project
   * create a storage account with a Blob container in it
-  * in the container, upload the data folder
+  * In the container, upload the data folder. Ensure the nested structure of the folder is maintained in Azure (e.g. <em>data/input/nasdaq/20200805</em>)
+  * take note of your storage account name, storage account access key, and Blob container name
+* Azure Databricks setup
+  * in your resource group, create an Azure Databricks Service
+  * Create a cluster with minimal compute power. I used the following settings:
+    * Cluster Mode = Standard
+    * Databricks Runtime Version = 7.5 (includes Apache Spark 3.0.1, Scala 2.12)
+    * Enable autoscaling
+    * Terminate after 60 minutes of inactivity
+    * Worker Type = Standard_DS3_v2 (14.0 GB Memory, 4 Cores, 0.75 DBU) with 2-8 workers
+    * Driver Type = Same as worker
+  * once the cluster is running, upload all the notebooks from the folder [code](code)
+  * in each of the notebooks, update the storage account name, storage account access key, and Blob container name with yours
+* running the ETL
+  * option 1: run each notebook sequentially and observe the intermediate stages of the Blob container and Databricks cluster
+  * option 2: run the notebook [run-guidedcapstone.ipynb](code/run-guidedcapstone.ipynb) to trigger the entire ETL
