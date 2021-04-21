@@ -31,8 +31,8 @@ The code for Stage 1 is contained in the Azure Databricks notebook [guidedcapsto
 This notebook is a PySpark script which I've hosted on an Azure Databricks cluster and does the following:
 * creates a file mount so that the cluster has access to the Blob Storage
 * partitions the NASDAQ and NYSE data into quotes and trades (and bad data, if there are any)
-* structure the partitions into dataframes with well-defined schemas
-* write the partitions on the cluster as parquet files
+* structures the partitions into dataframes with well-defined schemas
+* writes the partitions on the cluster as parquet files
 
 ## 2.3 - ETL Stage 2
 The code for Stage 2 is contained in the Azure Databricks notebook [guidedcapstonestep3_accesskeyhidden.ipynb](code/guidedcapstonestep3_accesskeyhidden.ipynb).
