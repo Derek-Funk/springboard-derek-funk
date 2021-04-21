@@ -48,4 +48,8 @@ This notebook does the following:
 * append the previous day's closing trade into a new column
 * write the final parquet files back to Blob Storage
 
-# How to reproduce
+# 3 - How to reproduce
+* Azure setup
+  * in your Azure account, create a resource group for this project
+  * create a storage account with a Blob container in it
+  * in the container, upload the data folder
