@@ -22,7 +22,8 @@ NASDAQ example:
 # 2 - ETL
 
 ## 2.1 - ETL Architecture
-
+The following diagram is a visual for the ETL. We will go through each of the stages.
+![image did not render](images/Data Flow Diagram-data flow.png "Data Flow Diagram-data flow.png")
 
 
 # How to reproduce
