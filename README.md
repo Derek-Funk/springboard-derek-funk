@@ -16,4 +16,4 @@ This repository holds all projects for Derek's Springboard Data Engineering Boot
 
 3. [spark-mini-project](spark-mini-project) and [hadoop-mini-project](hadoop-mini-project) show how to use Spark and Hadoop locally for testing purposes.
 
-4. [End-to-end ELT in Azure](End-to-end ELT in Azure) is a lab to explore the various features of Azure Data Factory.
+4. [azure-data-factory-etl-lab](azure-data-factory-etl-lab) is a lab to explore the various features of Azure Data Factory.
