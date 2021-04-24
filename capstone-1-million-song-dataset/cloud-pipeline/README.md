@@ -26,7 +26,8 @@ This section is divided into 2 parts:
 2. processing the data from S3 to the Azure SQL Database
 
 ### 3.5.1 - AWS EBS Snapshot -> AWS S3
-- in your AWS account, create an S3 bucket
+- in your AWS account, set the region to <em>us-east-1</em>
+- create an S3 bucket
 - spin up a basic Ubuntu EC2 instance
 - give the EC2 instance the role <em>AmazonS3FullAccess</em>
 - search for the EBS Snapshot with Snapshot ID = snap-2767d046
