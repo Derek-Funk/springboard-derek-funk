@@ -35,7 +35,7 @@ This notebook is a PySpark script which I've hosted on an Azure Databricks clust
 * writes the partitions on the cluster as parquet files
 
 ## 2.3 - ETL Stage 2
-The code for Stage 2 is contained in the Azure Databricks notebook [guidedcapstonestep3_accesskeyhidden.ipynb](code/guidedcapstonestep3_accesskeyhidden.ipynb).
+The code for Stage 2 is contained in the Azure Databricks notebook [guidedcapstonestep3_accesskeyhidden.ipynb](code/guidedcapstonestep3_accessKeyHidden.ipynb).
 
 This notebook cleans the data of any duplicate entries and writes the cleaned, partitioned parquet files back to Blob Storage.
 
