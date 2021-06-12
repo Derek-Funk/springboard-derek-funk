@@ -64,3 +64,5 @@ $ aws s3 cp --recursive /mnt/snap s3://<bucket-name>
 - If you log into the SQL database, you will notice all the tables created. Additionally, you can run the file testing/msd-subset-testing.py
 in the VM to see that the sizes of all the final tables are correct:
 ![image did not render](testing/msd-subset-testing.gif "msd-subset-testing.gif")
+- Lastly, you can monitor the usage of the SQL Database with Query Performance Insight. You can investigate over a custom time period which queries are the most intensive both in terms of time and resource:
+![image did not render](testing/open-capstone-monitor.gif "open-capstone-monitor.gif")
