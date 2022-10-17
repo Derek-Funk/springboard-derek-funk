@@ -55,7 +55,26 @@ def download_torrent_on_mac(download_url, target_folder):
     path_to_download = path_to_downloads_folder + '/' + download_name
     os.system(f'transmission-remote -t {torrent_id} -r')
     with tarfile.open(path_to_download, 'r:gz') as file:
-        file.extractall(target_folder)
+        def is_within_directory(directory, target):
+            
+            abs_directory = os.path.abspath(directory)
+            abs_target = os.path.abspath(target)
+        
+            prefix = os.path.commonprefix([abs_directory, abs_target])
+            
+            return prefix == abs_directory
+        
+        def safe_extract(tar, path=".", members=None, *, numeric_owner=False):
+        
+            for member in tar.getmembers():
+                member_path = os.path.join(path, member.name)
+                if not is_within_directory(path, member_path):
+                    raise Exception("Attempted Path Traversal in Tar File")
+        
+            tar.extractall(path, members, numeric_owner=numeric_owner) 
+            
+        
+        safe_extract(file, target_folder)
     os.system(f'rm {path_to_download}')
 
     t3 = time.time()
